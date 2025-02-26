@@ -1,0 +1,29 @@
+
+
+.circle-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid black;
+  overflow: hidden;
+  margin: 0;
+  // height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+.color-overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+  clip-path: circle(0% at var(--x, 0%) var(--y, 0%));
+  transition: clip-path 1s;
+}
